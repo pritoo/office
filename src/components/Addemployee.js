@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Button, FormControl, FormGroup, InputLabel,Input, makeStyles, Typography} from '@material-ui/core';
+import {addUsers,getUsers} from '../service/Api';
+import { useNavigate} from 'react-router-dom';
 
 const useStyle=makeStyles({
     container:{
@@ -19,16 +21,21 @@ const initialValues={
     Phone : " "
 }
 
-
-
 const Addemployee = () => {
     const [users,setUsers]=useState(initialValues); 
-    const [Name,Email,Salary,Phone]=users
+    const {Name,Email,Salary,Phone}=users;
     const classes =useStyle();
-    const onValueChange=(e)=>{
+    const Navigate = useNavigate()
+    
+const onValueChange=(e)=>{
     //console.log(e.target.value)
     setUsers({...users,[e.target.name]:e.target.value})
     }
+
+const addUserDetails= async()=>{
+await addUsers(users)
+Navigate('/all');
+}
   return (
     <>
    
@@ -50,7 +57,7 @@ const Addemployee = () => {
                <InputLabel>Phone</InputLabel>
                    <Input onChange={(e) => onValueChange(e)} name='Phone' value={Phone}/>    
            </FormControl>
-           <Button variant="contained" color="primary">Add User</Button>
+           <Button variant="contained" onClick={()=>addUserDetails()} color="primary">Add User</Button>
        </FormGroup>
     </>
   )
