@@ -1,32 +1,46 @@
 {
-    "users":[
-        {
-            "id":1,
-            "name":"test",
-            "email":"test@gmail.com",
-            "salary":1,
-            "phone":1234567890
-        },
-        {
-            "id":2,
-            "name":"test2",
-            "email":"test2@gmail.com",
-            "salary":2,
-            "phone":1234567890
-        },
-        {
-            "id":3,
-            "name":"test3",
-            "email":"test3@gmail.com",
-            "salary":3,
-            "phone":1234567890
-        },
-        {
-            "id":4,
-            "name":"test4",
-            "email":"test4@gmail.com",
-            "salary":4,
-            "phone":1234567890
-        }
-    ]
+  "users": [
+    {
+      "id": 2,
+      "Name": "test20",
+      "Email": "test2@gmail.com",
+      "Salary": 2,
+      "Phone": 1234567890
+    },
+    {
+      "id": 3,
+      "Name": "test3",
+      "Email": "test3@gmail.com",
+      "Salary": 3,
+      "Phone": 1234567890
+    },
+    {
+      "id": 4,
+      "Name": "test4",
+      "Email": "test4@gmail.com",
+      "Salary": 4,
+      "Phone": 1234567890
+    },
+    {
+      "Name": "test6",
+      "Email": "test6@gmail.com",
+      "Salary": " 6",
+      "Phone": " 1234567890",
+      "id": 5
+    },
+    {
+      "Name": " test5",
+      "Email": " test5@gmail.com",
+      "Salary": " 5",
+      "Phone": " 1234567890",
+      "id": 7
+    },
+    {
+      "Name": " test5",
+      "Email": " test5@gmail.com",
+      "Salary": " 5",
+      "Phone": " 1234567890",
+      "id": 8
+    }
+  ]
 }
